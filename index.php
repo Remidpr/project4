@@ -35,7 +35,7 @@
                         <p class="date">8 Avril 2019</p>
                         <img src="./images/glacier.jpg" alt="image article 1" class="image_article">
                         <p class="description_article">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, eius iste? Minima voluptate inventore ea corrupti cumque quas dolorum, consequatur facere earum exercitationem vitae, vero esse quos explicabo. Magnam, facilis...</p>
-                        <a href="article1.php" class="read_more">Lire la suite
+                        <a href="article.php?id=1" class="read_more">Lire la suite
                             <i class="fas fa-arrow-right"></i>
                         </a>
                         <div class="separator"></div>
@@ -45,7 +45,7 @@
                         <p class="date">15 Avril 2019</p>
                         <img src="./images/alaska1.jpg" alt="image article 2" class="image_article">
                         <p class="description_article">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, eius iste? Minima voluptate inventore ea corrupti cumque quas dolorum, consequatur facere earum exercitationem vitae, vero esse quos explicabo. Magnam, facilis...</p>
-                        <a href="article2.php" class="read_more">Lire la suite
+                        <a href="article.php?id=2" class="read_more">Lire la suite
                             <i class="fas fa-arrow-right"></i>
                         </a>
                         <div class="separator"></div>
@@ -55,7 +55,7 @@
                         <p class="date">26 Avril 2019</p>
                         <img src="./images/mountain.jpg" alt="image article 3" class="image_article">
                         <p class="description_article">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, eius iste? Minima voluptate inventore ea corrupti cumque quas dolorum, consequatur facere earum exercitationem vitae, vero esse quos explicabo. Magnam, facilis...</p>
-                        <a href="article3.php" class="read_more">Lire la suite
+                        <a href="article.php?id=3" class="read_more">Lire la suite
                             <i class="fas fa-arrow-right"></i>
                         </a>
                         <div class="separator"></div>

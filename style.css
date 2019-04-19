@@ -389,6 +389,7 @@ textarea{
     margin-left: 5%;
     color: rgba(48, 48, 48, 0.70);
     font-size: 17px;
+    line-height: 30px;
 }
 
 .image_article1{
@@ -399,7 +400,7 @@ textarea{
 .article_title{
     text-align: center;
     color: rgba(48, 48, 48, 0.80);
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 #bodyArticle {
@@ -409,4 +410,9 @@ textarea{
 
 .paragraphe {
     margin-bottom: 30px;
+}
+
+.article_date {
+    color: rgba(48, 48, 48, 0.438);
+    margin-bottom: 20px;
 }
