@@ -6,26 +6,6 @@
         <title>Commentaire</title>
     </head>
     <body>
-        <?php
-            try
-            {
-                $bdd = new PDO('mysql:host=localhost;dbname=projet4;charset=utf8', 'root', 'root',
-                array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-            }
-            catch (Exception $e)
-            {
-                die('Erreur : ' . $e->getMessage());
-            }
-            // Si tout va bien, on peut continuer
-
-            // On récupère tout le contenu de la table articles
-            $comment = $bdd->prepare('SELECT * FROM commentaires WHERE id_billet=?');
-            $comment->execute(array($_GET['id']));
-
-            // On affiche chaque entrée une à une
-            while ($comments = $comment->fetch())
-            {
-        ?>
         <form action="" method="post" id="formComment">
             <div class="separator"></div>
             <h3 class="titleComment">Laisser un commentaire</h3>
@@ -48,10 +28,18 @@
         <div class="partComment">
             <h3 class="titleComment">Commentaire</h3>
             <div class="comments">
+            <?php                      
+                //echo '<pre>';
+                //var_dump($comments);
+                //echo '</pre>';
+                for ($i=0; $i < count($comments); $i++) 
+                { //var_dump($comments[0]);  
+                ?>
                 <div class="comment">
-                    <div>
-                        <p><span class="authorComment"><?php echo $comments['auteur']; ?></span> - <span class="dateComment"><?php echo $comments['date_commentaire']; ?></span></p>
-                        <p class="message"><?php echo $comments['commentaire']; ?></p>
+                    <div class="infoComment">
+                        <p><span class="authorComment"><?php echo $comments[$i]['auteur']; ?>
+                        </span> - <span class="dateComment"><?php echo $comments[$i]['date_commentaire']; ?></span></p>
+                        <p class="message"><?php echo $comments[$i]['commentaire']; ?></p> 
                     </div>
                     <div class="buttonComment">
                         <button class="btnComment">Répondre</button>
@@ -59,11 +47,13 @@
                     </div>
                 </div>
                 <div class="separator2"></div>
+            <?php
+            }
+            ?>
             </div>
         </div>
         <?php
-        }
-        $reponse->closeCursor(); // Termine le traitement de la requête 
+        //$comments->closeCursor(); // Termine le traitement de la requête 
         ?>
     </body>
 </html>

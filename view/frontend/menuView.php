@@ -11,7 +11,7 @@
         <header id="header">
             <nav class="navigation">
                 <ul id="menu">
-                    <li><a href="listPostsView.php" class="menu_item">Accueil</a></li>
+                    <li><a href="index.php" class="menu_item">Accueil</a></li>
                     <li><a href="" class="menu_item">Articles</a></li>
                     <li><a href="" class="menu_item">Jean Forteroche</a></li>
                     <li><a href="" class="menu_item">FAQ</a></li>

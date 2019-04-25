@@ -381,6 +381,10 @@ textarea{
     background: linear-gradient( rgb(38, 80, 100) , rgb(65, 121, 138));
 }
 
+.infoComment {
+    width: 90%;
+}
+
 
 /* section article */
 

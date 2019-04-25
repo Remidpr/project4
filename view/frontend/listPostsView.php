@@ -30,36 +30,23 @@
         <section id="articles">
             <div class="container_articles">
                 <div class="feed">
+                    <?php
+                    while ($post = $posts->fetch())
+                    {
+                    ?>
                     <article>
-                        <h3 class="title_article">Billet n°1 - Le commencement</h3>
-                        <p class="date">8 Avril 2019</p>
-                        <img src="../../public/images/glacier.jpg" alt="image article 1" class="image_article">
-                        <p class="description_article">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, eius iste? Minima voluptate inventore ea corrupti cumque quas dolorum, consequatur facere earum exercitationem vitae, vero esse quos explicabo. Magnam, facilis...</p>
-                        <a href="postView.php?id=1" class="read_more">Lire la suite
+                        <h3 class="title_article"><?php echo $post['titre']; ?></h3>
+                        <p class="date"><?php echo $post['date']; ?></p>
+                        <img src="../../public/images/<?php echo $post['img']; ?>" alt="image article" class="image_article">
+                        <p class="description_article"><?php echo $post['description']; ?></p>
+                        <a href="index.php?action=article&id=<?php echo $post['id']; ?>" class="read_more">Lire la suite
                             <i class="fas fa-arrow-right"></i>
                         </a>
                         <div class="separator"></div>
                     </article>
-                    <article>
-                        <h3 class="title_article">Billet n°2 - Un allé simple </h3>
-                        <p class="date">15 Avril 2019</p>
-                        <img src="../../public/images/alaska1.jpg" alt="image article 2" class="image_article">
-                        <p class="description_article">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, eius iste? Minima voluptate inventore ea corrupti cumque quas dolorum, consequatur facere earum exercitationem vitae, vero esse quos explicabo. Magnam, facilis...</p>
-                        <a href="postView.php?id=2" class="read_more">Lire la suite
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <div class="separator"></div>
-                    </article>
-                    <article>
-                        <h3 class="title_article">Billet n°3 - Souffle d'hiver</h3>
-                        <p class="date">26 Avril 2019</p>
-                        <img src="../../public/images/mountain.jpg" alt="image article 3" class="image_article">
-                        <p class="description_article">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, eius iste? Minima voluptate inventore ea corrupti cumque quas dolorum, consequatur facere earum exercitationem vitae, vero esse quos explicabo. Magnam, facilis...</p>
-                        <a href="postView.php?id=3" class="read_more">Lire la suite
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <div class="separator"></div>
-                    </article>
+                    <?php
+                    }
+                    ?>
                 </div>
             <div>
         </section>
