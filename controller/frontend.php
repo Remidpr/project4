@@ -20,4 +20,16 @@ function comments($postId)
     require('./view/frontend/commentView.php');
 }
 
+function addComment($id_billet, $auteur, $commentaire)
+{
+    $affectedLines = postComment($id_billet, $auteur, $commentaire);
+
+    if ($affectedLines === false) {
+        die('Impossible d\'ajouter le commentaire !');
+    }
+    else {
+        header('Location: index.php?action=article&id=' . $id_billet);
+    }
+}
+
 ?>

@@ -18,7 +18,6 @@
             </div>
             <?php 
                 comments($post['id']);
-                include("commentView.php"); 
             ?>
         </div>
         <?php include("footerView.php"); ?>

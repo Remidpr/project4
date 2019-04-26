@@ -6,12 +6,13 @@
         <title>Commentaire</title>
     </head>
     <body>
-        <form action="" method="post" id="formComment">
+    
+        <form action="index.php?action=addComment&id=<?php echo $postId ?>" method="post" id="formComment">
             <div class="separator"></div>
             <h3 class="titleComment">Laisser un commentaire</h3>
             <div class="commentPart1">
                 <label class="labelComment" for="comment">Commentaire</label>
-                <textarea id="comment" required></textarea>
+                <textarea id="comment" name="inputComment" required></textarea>
             </div>
             <div class="commentPart2">
                 <div class="partName">
