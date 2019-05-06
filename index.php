@@ -27,7 +27,17 @@ if (isset($_GET['action'])) {
             echo 'Erreur : aucun identifiant de billet envoyé';
         }
     }
+    elseif ($_GET['action'] == 'admin') {
+        loginAdmin();
+        if (isset($_POST['mot_de_passe']) && isset($_POST['userlogin']) && $_POST['mot_de_passe'] ==  "Forteroche"  && $_POST['userlogin'] ==  "Jean"){
+            getAdmin();
+        }
+        else {
+            echo "<p>Informations d'identification incorrect</p>";
+        }
+    }
 }
 else {
     articles();
 }
+?>
