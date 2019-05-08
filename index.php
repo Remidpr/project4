@@ -1,5 +1,6 @@
 <?php
 require('controller/frontend.php');
+require('controller/backend.php');
 
 if (isset($_GET['action'])) {
     if ($_GET['action'] == 'articles') {
@@ -27,13 +28,16 @@ if (isset($_GET['action'])) {
             echo 'Erreur : aucun identifiant de billet envoyé';
         }
     }
-    elseif ($_GET['action'] == 'admin') {
-        loginAdmin();
-        if (isset($_POST['mot_de_passe']) && isset($_POST['userlogin']) && $_POST['mot_de_passe'] ==  "Forteroche"  && $_POST['userlogin'] ==  "Jean"){
-            getAdmin();
-        }
-        else {
-            echo "<p>Informations d'identification incorrect</p>";
+    elseif ($_GET['action'] == 'admin') {   
+        if (isset($_POST['mot_de_passe']) && isset($_POST['userlogin'])){
+            if ($_POST['mot_de_passe'] ==  "Forteroche"  && $_POST['userlogin'] ==  "Jean"){
+                viewAdmin();
+            }
+            else {
+                echo "<p>Informations d'identification incorrect</p>";
+            }
+        }else{
+            loginAdmin();
         }
     }
 }

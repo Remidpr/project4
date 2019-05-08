@@ -7,7 +7,7 @@
     </head>
     <body id="loginBody">
         <p class="info_login">Veuillez vous identifier pour vous connecter à l'interface d'administration :</p>
-        <form action="adminView.php" method="post" class="formLogin">
+        <form action="index.php?action=admin" method="post" class="formLogin">
             <div class="form_part1">
                 <label for="login" class="labelLogin">Identifiant</label>
                 <input type="text" name="userlogin" id="login" required/>

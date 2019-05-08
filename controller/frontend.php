@@ -10,7 +10,6 @@ function article()
 function articles()
 {
     $posts = getBillets();
-    //echo var_dump($posts);
     require('./view/frontend/listPostsView.php');
 }
 
