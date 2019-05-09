@@ -10,4 +10,9 @@ function viewAdmin()
 {
     require('./view/backend/adminView.php');
 }
+
+function editPost()
+{
+    require('./view/backend/editView.php');
+}
 ?>

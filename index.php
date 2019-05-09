@@ -40,6 +40,9 @@ if (isset($_GET['action'])) {
             loginAdmin();
         }
     }
+    elseif ($_GET['action'] == 'edit') {
+        editPost();
+    }
 }
 else {
     articles();
