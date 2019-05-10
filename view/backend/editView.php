@@ -18,6 +18,9 @@
                     <input type="text" name="postTitle" id="titlePost" placeholder="Titre de l'article" required/>
                 </div>
                 <div>
+                    <textarea class="descriptionPost">Courte description de l'article limité à 255 caractères.</textarea>
+                </div>
+                <div>
                     <textarea id="mytextarea">Rédigeais votre article ici.</textarea>
                 </div>
                 <div>
