@@ -15,4 +15,9 @@ function editPost()
 {
     require('./view/backend/editView.php');
 }
+
+function addPost($title, $content)
+{
+    
+}
 ?>

@@ -39,7 +39,7 @@ function getBillet()
 function getComments($id_billet)
 {
     $db = dbConnect();
-    // On récupère tout le contenu de la table articles
+    // On récupère tout le contenu de la table commentaire associé à l'article
     $comment = $db->prepare('SELECT * FROM Commentaires WHERE id_billet=?');
     $comment->execute(array($id_billet));
     

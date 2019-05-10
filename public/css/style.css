@@ -431,16 +431,17 @@ textarea{
 }
 
 .formEdit {
-    padding-top: 110px;
+    padding-top: 90px;
 }
 
 #titlePost {
     border: 1px solid #ccc;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 23px;
     width: 50%;
     padding-left: 15px;
     height: 30px;
+    border-radius: 7px;
 }
 
 .containerEdit {
@@ -450,16 +451,19 @@ textarea{
 
 div.tox.tox-tinymce {
     height: 600px !important;
+    border-radius: 7px;
 }
 
-.mce-content-body {
-    color: #757575 !important;
-}
-
-#tinymce {
-    color: #757575 !important;
-}
-
-body#tinymce.mce-content-body {
-    color: #757575 !important;
+.submitEdit {
+    background: linear-gradient( rgb(38, 80, 100) , rgb(65, 121, 138));
+    color: white;
+    font-weight: lighter;
+    font-size: 16px;
+    border-radius: 7px;
+    margin-top: 23px;
+    padding: 5px;
+    border: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 32px;
 }

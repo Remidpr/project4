@@ -20,8 +20,11 @@
                 <div>
                     <textarea id="mytextarea">Rédigeais votre article ici.</textarea>
                 </div>
+                <div>
+                    <input type="submit" value="Publier article" class="submitEdit">
+                </div>
             </form>
-            <?php include("../frontend/footerView.php"); ?>
+            <?php include("../../frontend/footerView.php"); ?>
             <script type="text/javascript" src="../../public/js/script.js"></script>
         </div>
     </body>
