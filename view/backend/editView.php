@@ -14,8 +14,11 @@
         <div class="containerEdit">
             <form class="formEdit" method="post">
                 <div>
-                    <label for="titlePost"></label>
-                    <input type="text" name="postTitle" id="titlePost" placeholder="Titre de l'article" required/>
+                    <textarea id="titlePost" required>Titre de l'article</textarea>
+                </div>
+                <div class="formImgPost">
+                    <label for="imgPost">Sélectionner une image à mettre en avant pour l'article :</label>
+                    <input type="file" name="postImg" id="imgPost" required/>
                 </div>
                 <div>
                     <textarea class="descriptionPost">Courte description de l'article limité à 255 caractères.</textarea>
