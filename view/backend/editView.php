@@ -12,26 +12,26 @@
             <h2 class="mainTitleEdit">Rédaction article</h2>
         </header>
         <div class="containerEdit">
-            <form class="formEdit" method="post">
+            <form action="index.php?action=addPost" class="formEdit" method="post">
                 <div>
-                    <textarea id="titlePost" required>Titre de l'article</textarea>
+                    <textarea id="titlePost" name="postTitle" required>Titre de l'article</textarea>
                 </div>
                 <div class="formImgPost">
                     <label for="imgPost">Sélectionner une image à mettre en avant pour l'article :</label>
-                    <input type="file" name="postImg" id="imgPost" required/>
+                    <input type="text" name="postImg" id="imgPost" required/>
                 </div>
                 <div>
-                    <textarea class="descriptionPost">Courte description de l'article limité à 255 caractères.</textarea>
+                    <textarea class="descriptionPost" name="postDescription">Courte description de l'article limité à 255 caractères.</textarea>
                 </div>
                 <div>
-                    <textarea id="mytextarea">Rédigeais votre article ici.</textarea>
+                    <textarea id="mytextarea" name="postContent">Rédigeais votre article ici.</textarea>
                 </div>
                 <div>
                     <input type="submit" value="Publier article" class="submitEdit">
                 </div>
             </form>
-            <?php include("../../frontend/footerView.php"); ?>
             <script type="text/javascript" src="../../public/js/script.js"></script>
         </div>
+        <?php include("view/frontend/footerView.php"); ?>
     </body>
 </html>

@@ -36,9 +36,9 @@
                     ?>
                     <article>
                         <h3 class="title_article"><?php echo $post['titre']; ?></h3>
-                        <p class="date"><?php echo $post['date']; ?></p>
+                        <p class="date"><?php echo $post['date_article']; ?></p>
                         <img src="../../public/images/<?php echo $post['img']; ?>" alt="image article" class="image_article">
-                        <p class="description_article"><?php echo $post['description']; ?></p>
+                        <p class="description_article"><?php echo $post['description_article']; ?></p>
                         <a href="index.php?action=article&id=<?php echo $post['id']; ?>" class="read_more">Lire la suite
                             <i class="fas fa-arrow-right"></i>
                         </a>

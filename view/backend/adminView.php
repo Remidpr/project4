@@ -6,7 +6,9 @@
         <title> Espace d'administration</title>
     </head>
     <body>
-        <h1>Espace d'administration</h1>
+        <header id="header">
+            <h2 class="mainTitleEdit">Espace d'administration</h2>
+        </header>
         <a href="index.php?action=edit" class="buttonEdit">Créer un nouvel article</a>
     </body>
 </html>

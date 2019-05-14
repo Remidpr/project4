@@ -16,8 +16,15 @@ function editPost()
     require('./view/backend/editView.php');
 }
 
-function addPost($title, $content)
+function addPost($title, $image, $description, $content)
 {
-    
+    $editPost = newPost($title, $image, $description, $content);
+
+    if ($editPost === false) {
+        die("Impossible d'ajouter l'article!");
+    }
+    else {
+        header('Location: index.php');
+    }
 }
 ?>

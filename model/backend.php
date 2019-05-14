@@ -1,10 +1,10 @@
 <?php
-function newPost($title, $content, $description, $image)
+function newPost($title, $image, $description, $content)
 {
     $db = dbConnect();
-    $comment = $db->prepare('INSERT INTO articles(titre, contenu, description_article, img, date_article) VALUES(?, ?, ?, ?, NOW())');
-    $affectedLines = $comment->execute(array($title, $content, $description, $image));
+    $newPost = $db->prepare('INSERT INTO articles(titre, img, description_article, contenu, date_article) VALUES(?, ?, ?, ?, NOW())');
+    $editPost = $newPost->execute(array($title, $image, $description, $content));
 
-    return $affectedLines;
+    return $editPost;
 }
 ?>
