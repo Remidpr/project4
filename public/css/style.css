@@ -499,9 +499,28 @@ div.tox.tox-tinymce {
 /* section admin */
 
 .containerAdmin {
-    padding-top: 130px;
+    padding-top: 225px;
     margin: 0;
     padding-left: 15%;
     padding-right: 15%;
-    padding-bottom: 30px;
+    padding-bottom: 135px;
+}
+
+.menuAdmin{
+    border-radius: 7px;
+}
+
+.itemMenu {
+    color: #269da6 !important;
+    text-align: center;
+}
+
+.bodyAdmin {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+footer {
+    flex: 1 0 auto;
 }

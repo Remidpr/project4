@@ -6,16 +6,17 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <title> Espace d'administration</title>
     </head>
-    <body>
+    <body class="bodyAdmin">
         <header id="header">
             <h2 class="mainTitleEdit">Espace d'administration</h2>
         </header>
         <div class="containerAdmin">
             <div class="collection menuAdmin">
-                <a href="index.php?action=edit" class="collection-item">Créer un nouvel article</a>
-                <a href="#!" class="collection-item">Modération commentaire</a>
-                <a href="#!" class="collection-item">Gestion articles</a>
-                <a href="#!" class="collection-item">Alvin</a>
+                <a href="index.php?action=edit" class="collection-item itemMenu">Créer un nouvel article</a>
+                <a href="#!" class="collection-item itemMenu">Gestion commentaires</a>
+                <a href="#!" class="collection-item itemMenu">Gestion articles</a>
+                <a href="#!" class="collection-item itemMenu">Préférences</a>
+                <a href="#!" class="collection-item itemMenu">Paramètres</a>
             </div>
         </div>
         <?php include("view/frontend/footerView.php"); ?>
