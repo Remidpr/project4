@@ -17,8 +17,7 @@
                     <textarea id="titlePost" name="postTitle" required>Titre de l'article</textarea>
                 </div>
                 <div class="formImgPost">
-                    <label for="imgPost">Sélectionner une image à mettre en avant pour l'article :</label>
-                    <input type="text" name="postImg" id="imgPost" required/>
+                    <textarea type="text" name="postImg" id="imgPost" required>Nom de l'image comprenant l'extension (jpg, png...)</textarea>
                 </div>
                 <div>
                     <textarea class="descriptionPost" name="postDescription">Courte description de l'article limité à 255 caractères.</textarea>
