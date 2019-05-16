@@ -499,11 +499,11 @@ div.tox.tox-tinymce {
 /* section admin */
 
 .containerAdmin {
-    padding-top: 225px;
+    padding-top: 200px;
     margin: 0;
     padding-left: 15%;
     padding-right: 15%;
-    padding-bottom: 135px;
+    padding-bottom: 100px;
 }
 
 .menuAdmin{
@@ -523,4 +523,11 @@ div.tox.tox-tinymce {
 
 footer {
     flex: 1 0 auto;
+}
+
+.menuAdmin{
+    color: #208f97;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
 }

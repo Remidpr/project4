@@ -11,13 +11,14 @@
             <h2 class="mainTitleEdit">Espace d'administration</h2>
         </header>
         <div class="containerAdmin">
-            <div class="collection menuAdmin">
-                <a href="index.php?action=edit" class="collection-item itemMenu">Créer un nouvel article</a>
-                <a href="#!" class="collection-item itemMenu">Gestion commentaires</a>
-                <a href="#!" class="collection-item itemMenu">Gestion articles</a>
-                <a href="#!" class="collection-item itemMenu">Préférences</a>
-                <a href="#!" class="collection-item itemMenu">Paramètres</a>
-            </div>
+                <ul class="collection with-header">
+                    <li class="collection-header"><h4 class="menuAdmin">Menu administration</h4></li>
+                    <li class="collection-item itemMenu"><a class="itemMenu" href="index.php?action=edit">Créer un nouvel article</a></li>
+                    <li class="collection-item itemMenu"><a class="itemMenu" href="#!">Gestion commentaires</a></li>
+                    <li class="collection-item itemMenu"><a class="itemMenu" href="#!">Gestion articles</a></li>
+                    <li class="collection-item itemMenu"><a class="itemMenu" href="#!">Préférences</a></li>
+                    <li class="collection-item itemMenu"><a class="itemMenu" href="#!">Paramètres</a></li>
+                </ul>
         </div>
         <?php include("view/frontend/footerView.php"); ?>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
