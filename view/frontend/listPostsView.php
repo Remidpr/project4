@@ -3,6 +3,8 @@
     <head> 
         <link rel="stylesheet" href="../../public/css/style.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <meta charset=utf-8>
         <meta name=description content="Un nouvelle épisode chaque semaine !"/>
         <title>Billet simple pour l'Alaska</title>
@@ -50,6 +52,19 @@
                 </div>
             <div>
         </section>
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large z-depth-3 pulse">
+                <i class="large material-icons">more</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+            </ul>
+        </div>
         <?php include("footerView.php"); ?>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script type="text/javascript" src="public/js/script.js"></script>
     </body>
 <html>

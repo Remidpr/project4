@@ -10,13 +10,24 @@ body {
 }
 
 header {
-    padding-top: 16px;
     position: fixed;
     background-color: white;
     width: 100%;
     box-shadow: 0px 1px 5px #00000069;
     z-index: 100;
     background: linear-gradient( rgb(38, 80, 100) , rgb(65, 121, 138));
+}
+
+.navigation {
+    background-color: transparent;
+}
+
+.pulse:hover {
+    background-color: rgb(42, 91, 114);
+}
+
+.pulse{
+    background-color: rgb(65, 121, 138);
 }
 
 .main_title {
@@ -163,6 +174,7 @@ h4{
 .select_page{
     color: rgb(65, 121, 138);
     font-weight: bold;
+    margin-left: -76px;
 }
 
 .publication{

@@ -8,3 +8,12 @@ function newPost($title, $image, $description, $content)
     return $editPost;
 }
 ?>
+
+<?php
+function getHashMdp()
+{
+    $db = dbConnect();
+    $adminMdp = $db->prepare('SELECT * FROM membres');
+    return $adminMdp;
+}
+?>

@@ -27,4 +27,10 @@ function addPost($title, $image, $description, $content)
         header('Location: index.php');
     }
 }
-?>
+
+function compareMdp()
+{   
+    $mdpHash = getHashMdp();
+    $isPasswordCorrect = password_verify($_POST['mot_de_passe'], $mdpHash['motdepasse']);
+}
+
