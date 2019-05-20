@@ -10,10 +10,11 @@ function newPost($title, $image, $description, $content)
 ?>
 
 <?php
-function getHashMdp()
+function getAdminUser($idAdmin)
 {
     $db = dbConnect();
-    $adminMdp = $db->prepare('SELECT * FROM membres');
-    return $adminMdp;
+    $adminMdp = $db->prepare('SELECT * FROM Membres where id=?');
+    $adminMdp->execute(array($idAdmin));
+    return $adminMdp->fetch();
 }
 ?>

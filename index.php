@@ -34,7 +34,7 @@ if (isset($_GET['action'])) {
     // accès espace administrateur
     elseif ($_GET['action'] == 'admin') {   
         if (isset($_POST['mot_de_passe']) && isset($_POST['userlogin'])){
-            if ($isPasswordCorrect == true && $_POST['userlogin'] == $mdpHash['identifiant']){
+            if (isAdminUser($_POST['userlogin'],$_POST['mot_de_passe'])){
                 viewAdmin();
             }
             else {

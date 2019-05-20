@@ -28,9 +28,13 @@ function addPost($title, $image, $description, $content)
     }
 }
 
-function compareMdp()
-{   
-    $mdpHash = getHashMdp();
-    $isPasswordCorrect = password_verify($_POST['mot_de_passe'], $mdpHash['motdepasse']);
+function isAdminUser ($login, $mdp){
+    $adminUser = getAdminUser(1);
+    $isPasswordCorrect = password_verify($mdp, $adminUser['motdepasse']);
+    if($isPasswordCorrect == true && $login==$adminUser['identifiant']){
+        return true; 
+    }else{
+        return false;
+    }
 }
 
