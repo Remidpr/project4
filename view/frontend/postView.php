@@ -13,7 +13,7 @@
             </div>
             <h2 class="article_title"><?php echo $post['titre']; ?></h2>
             <div class="contenuArticle">
-                <p class="article_date"><?php echo $post['date']; ?></p>
+                <p class="article_date"><?php echo $post['date_article']; ?></p>
                 <?php echo $post['contenu'];?>
             </div>
             <?php 
