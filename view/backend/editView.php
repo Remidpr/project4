@@ -19,7 +19,7 @@
                     <textarea id="titlePost" name="postTitle" required>Titre de l'article</textarea>
                 </div>
                 <div class="formImgPost">
-                    <textarea type="text" name="postImg" id="imgPost" required>Nom de l'image comprenant l'extension (jpg, png...)</textarea>
+                    <input type="file" name="postImg" id="imgPost" required/>
                 </div>
                 <div>
                     <textarea class="descriptionPost" name="postDescription">Courte description de l'article limité à 255 caractères.</textarea>
