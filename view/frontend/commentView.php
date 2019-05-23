@@ -6,7 +6,6 @@
         <title>Commentaire</title>
     </head>
     <body>
-    
         <form action="index.php?action=addComment&id=<?php echo $postId ?>" method="post" id="formComment">
             <div class="separator"></div>
             <h3 class="titleComment">Laisser un commentaire</h3>
