@@ -436,7 +436,7 @@ textarea{
 /* section edit */
 
 .mainTitleEdit {
-    margin-top: 3px;
+    margin-top: 11px;
     color: white;
     display: flex;
     justify-content: center;
@@ -539,4 +539,40 @@ footer {
     text-align: center;
     font-size: 25px;
     margin: 10px;
+}
+
+/* section listComment */
+
+.bodyComment {
+    padding-left: 20%;
+    padding-right: 20%;
+    width: 100%;
+    padding-top: 10%;
+}
+
+.listComment {
+    margin: 0;
+}
+
+.circle {
+    font-size: x-large !important;
+    background: linear-gradient( rgb(59, 122, 150) , rgb(91, 166, 189));
+}
+
+li.collection-item.avatar{
+    padding-right: 47px;
+}
+
+.more{
+    color: #579db3;
+}
+
+.select {
+    background: linear-gradient( rgb(51, 109, 136) , rgba(68, 130, 148, 0.95));
+    border: 1px solid rgb(63, 115, 140);
+}
+
+.menuComment {
+    border-right: none;
+    border-left: none;
 }

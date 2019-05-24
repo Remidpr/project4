@@ -38,3 +38,8 @@ function isAdminUser ($login, $mdp){
     }
 }
 
+function viewListComment()
+{
+    require('./view/backend/listCommentsView.php');
+}
+

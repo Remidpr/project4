@@ -48,6 +48,9 @@ if (isset($_GET['action'])) {
     elseif ($_GET['action'] == 'edit') {
         editPost();
     }
+    elseif ($_GET['action'] == 'listComment') {
+        viewListComment();
+    }
     // ajout article
     elseif ($_GET['action'] == 'addPost') { 
         if (!empty($_POST['postTitle']) && !empty($_POST['postImg']) && !empty($_POST['postDescription']) && !empty($_POST['postContent'])) {
