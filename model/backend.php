@@ -18,3 +18,12 @@ function getAdminUser($idAdmin)
     return $adminMdp->fetch();
 }
 ?>
+
+<?php
+function getAllComments()
+{
+    $db = dbConnect();
+    $comments = $db->query('SELECT * FROM commentaires');
+    return $comments;
+}
+?>

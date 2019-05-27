@@ -43,3 +43,9 @@ function viewListComment()
     require('./view/backend/listCommentsView.php');
 }
 
+function allComments()
+{
+    $allComments = getAllComments();
+    require('./view/backend/listCommentsView.php');
+}
+

@@ -12,7 +12,7 @@
             <h2 class="mainTitleEdit">Gestion des commentaires</h2>
         </header>
         <div class="bodyComment">
-            <ul class="collapsible menuComment">
+            <ul class="collapsible menuComment popout">
                 <li>
                     <div class="collapsible-header"><i class="material-icons authorComment">announcement</i><span class="authorComment">Commentaires signalés</span></div>
                     <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
@@ -26,17 +26,24 @@
                     <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
                 </li>
             </ul>
+            <?php
+                while ($commentaire = $allComments->fetch())
+                {
+            ?>
             <ul class="collection listComment">
                 <li class="collection-item avatar">
                 <i class="material-icons circle">face</i>
-                <p><span class="title authorComment">Nom Prénom</span> - <span class="dateComment">date</span></p>
-                <p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A qui, officiis cumque nesciunt ut accusamus molestias voluptatem deleniti! Doloribus quod quia atque amet nam deserunt exercitationem rerum commodi distinctio dolor.</p>
+                <p><span class="title authorComment"><?php echo $commentaire['auteur']; ?></span> - <span class="dateComment"><?php echo $commentaire['date_commentaire']; ?></span></p>
+                <p class="message"><?php echo $commentaire['commentaire']; ?></p>
                 <a href="#!" class="secondary-content"><i class="material-icons more">more</i></a>
                 </li>
             </ul>
+            <?php
+                }
+            ?>
         </div>
         <?php include("view/frontend/footerView.php"); ?>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script type="text/javascript" src="public/js/script.js"></script>
+        <script type="text/javascript" src="../../public/js/comments.js"></script>       
     </body>
 </html>

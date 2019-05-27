@@ -27,7 +27,6 @@ function getBillets()
 function getBillet()
 {
     $db = dbConnect();
-    // On récupère tout le contenu de la table articles
     $reponse = $db->prepare('SELECT * FROM articles WHERE id=?');
     $reponse->execute(array($_GET['id']));
 
