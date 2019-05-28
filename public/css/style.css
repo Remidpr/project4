@@ -18,6 +18,11 @@ header {
     background: linear-gradient( rgb(38, 80, 100) , rgb(65, 121, 138));
 }
 
+.iconContact {
+    background: linear-gradient( rgb(59, 122, 150) , rgb(91, 166, 189));
+    border: 1px solid rgb(63, 115, 140);
+}
+
 .navigation {
     background-color: transparent;
 }

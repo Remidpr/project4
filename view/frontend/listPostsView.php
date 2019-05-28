@@ -57,14 +57,14 @@
                 <i class="large material-icons">more</i>
             </a>
             <ul>
-                <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-                <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-                <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-                <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                <li><a class="btn-floating iconContact"><i class="material-icons">mail</i></a></li>
+                <li><a class="btn-floating iconContact"><i class="material-icons">phone</i></a></li>
+                <li><a class="btn-floating iconContact"><i class="material-icons">map</i></a></li>
+                <li><a class="btn-floating iconContact"><i class="material-icons">search</i></a></li>
             </ul>
         </div>
         <?php include("footerView.php"); ?>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script type="text/javascript" src="public/js/script.js"></script>
+        <script type="text/javascript" src="../../public/js/home.js"></script>
     </body>
 <html>
