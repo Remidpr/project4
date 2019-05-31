@@ -23,7 +23,7 @@
                         <a href="" class="select_page">Accueil</a>
                     </div>
                     <div class="banner_part2">
-                        <a href="" class="publication">Prochaine publication le 7 Mai 2019.</a>
+                        <a href="" class="publication">Prochaine publication le 21 Juin 2019.</a>
                     </div>
                 </div>
             </div>

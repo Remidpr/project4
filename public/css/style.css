@@ -20,7 +20,6 @@ header {
 
 .iconContact {
     background: linear-gradient( rgb(59, 122, 150) , rgb(91, 166, 189));
-    border: 1px solid rgb(63, 115, 140);
 }
 
 .navigation {
@@ -44,20 +43,33 @@ header {
     font-size: 35px;
 }
 
+.btnAdmin{
+    border: 1px solid;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btnNav{
+    display: flex;
+    align-items: center;
+}
+
 .main_button{
     position: absolute;
     top: 39%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 17px;
+    font-size: 16px;
     padding: 10px;
     border-radius: 100px;
     padding-right: 15px;
     padding-left: 15px;
     background: linear-gradient( rgb(38, 80, 100) , rgb(65, 121, 138));
     color: white;
-    font-weight: 500;
-    border-color: #949494;
+    border: none;
 }
 
 .image_article {
@@ -580,4 +592,21 @@ li.collection-item.avatar{
 .menuComment {
     border-right: none;
     border-left: none;
+}
+
+.collection .collection-item.avatar {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.collapsible .collection {
+    border-bottom: 1px solid #eaeaea !important;
+}
+
+.collapsible-header:focus {
+    background: linear-gradient( rgb(51, 109, 136) , rgba(68, 130, 148, 0.95));
+}
+
+.badge{
+    background: linear-gradient( rgb(51, 109, 136) , rgba(68, 130, 148, 0.95));
 }

@@ -50,7 +50,7 @@ if (isset($_GET['action'])) {
     }
     elseif ($_GET['action'] == 'listComment') {
         allComments();
-        viewListComment();       
+        //viewListComment();       
     }
     // ajout article
     elseif ($_GET['action'] == 'addPost') { 
