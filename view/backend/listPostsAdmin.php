@@ -13,34 +13,24 @@
         </header>
         <div class="bodyComment">
             <ul class="collapsible menuComment popout">
-                <li>
-                    <div class="collapsible-header"><i class="material-icons authorComment">announcement</i><span class="authorComment">Commentaires signalés</span><span class="new badge" data-badge-caption="en attente">4</span></div>
-                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons authorComment">message</i><span class="authorComment">Tous les commentaires</span></div>
-                    <div class="collapsible-body">
+                <li class="active">
+                    <div class="collapsible-header select"><i class="material-icons authorComment">message</i><span class="authorComment">Tous les articles</span></div>
+                    <div class="collapsible-body bottom">
+                        <?php
+                            while ($adminPost = $adminPosts->fetch())
+                            {
+                        ?>
                             <ul class="collection listComment">
                                 <li class="collection-item avatar">
-                                <i class="material-icons circle">face</i>
-                                <p><span class="title authorComment">Test</span> - <span class="dateComment">test</span></p>
-                                <p class="message">test</p>
+                                <i class="material-icons circle"><img src="/public/images/<?php echo $adminPost['img']; ?>" alt="image article" class="miniatureImg"></i>
+                                <p><span class="title authorComment"><?php echo $adminPost['titre']; ?></span> - <span class="dateComment"><?php echo $adminPost['date_article']; ?></span></p>
+                                <p class="message"><?php echo $adminPost['description_article']; ?></p>
                                 <a href="#!" class="secondary-content"><i class="material-icons more">more</i></a>
                                 </li>
                             </ul>
-                    </div>
-                </li>
-                <li class="active">
-                    <div class="collapsible-header select"><i class="material-icons authorComment">forum</i><span class="authorComment">Les derniers commentaires</span></div>
-                    <div class="collapsible-body">
-                        <ul class="collection listComment">
-                            <li class="collection-item avatar">
-                                <i class="material-icons circle">face</i>
-                                <p><span class="title authorComment">Test</span> - <span class="dateComment">test</span></p>
-                                <p class="message">test</p>
-                                <a href="#!" class="secondary-content"><i class="material-icons more">more</i></a>
-                            </li>
-                        </ul>
+                        <?php
+                            }
+                        ?>
                     </div>
                 </li>
             </ul>

@@ -32,7 +32,18 @@ function getFirstComments()
 function getAllComments()
 {
     $db = dbConnect();
-    $allComment = $db->query('SELECT * FROM commentaires');
-    return $allComment;
+    $allComments = $db->query('SELECT * FROM commentaires');
+    
+    return $allComments;
+}
+?>
+
+<?php
+function getAdminPosts()
+{
+    $db = dbConnect();
+    // On récupère tout le contenu de la table articles
+    $allPosts = $db->query('SELECT * FROM articles');
+    return $allPosts;
 }
 ?>

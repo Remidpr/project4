@@ -38,18 +38,15 @@ function isAdminUser ($login, $mdp){
     }
 }
 
-function firstComments()
-{
-    $firstComments = getFirstComments();
-    require('./view/backend/listCommentsView.php');
-}
-
 function allComments()
 {
+    $firstComments = getFirstComments();
     $allComments = getAllComments();
+    require('./view/backend/listCommentsView.php');
 }
 
 function adminPosts()
 {
+    $adminPosts = getAdminPosts();
     require('./view/backend/listPostsAdmin.php');
 }

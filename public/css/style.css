@@ -610,3 +610,11 @@ li.collection-item.avatar{
 .badge{
     background: linear-gradient( rgb(51, 109, 136) , rgba(68, 130, 148, 0.95));
 }
+
+.miniatureImg{
+    height: 45px;
+}
+
+.bottom{
+    margin-bottom:70px;
+}

@@ -49,7 +49,6 @@ if (isset($_GET['action'])) {
         editPost();
     }
     elseif ($_GET['action'] == 'listComment') {
-        firstComments();
         allComments();   
     }
     elseif ($_GET['action'] == 'adminPosts') {
