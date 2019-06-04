@@ -15,7 +15,7 @@
                     <li class="collection-header"><h4 class="menuAdmin">Menu administration</h4></li>
                     <li class="collection-item itemMenu"><a class="itemMenu" href="index.php?action=edit">Créer un nouvel article</a></li>
                     <li class="collection-item itemMenu"><a class="itemMenu" href="index.php?action=listComment">Gestion commentaires</a></li>
-                    <li class="collection-item itemMenu"><a class="itemMenu" href="#!">Gestion articles</a></li>
+                    <li class="collection-item itemMenu"><a class="itemMenu" href="index.php?action=adminPosts">Gestion articles</a></li>
                     <li class="collection-item itemMenu"><a class="itemMenu" href="#!">Préférences</a></li>
                     <li class="collection-item itemMenu"><a class="itemMenu" href="#!">Paramètres</a></li>
                 </ul>

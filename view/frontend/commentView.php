@@ -42,7 +42,6 @@
                         <p class="message"><?php echo $comments[$i]['commentaire']; ?></p> 
                     </div>
                     <div class="buttonComment">
-                        <button class="btnComment">Répondre</button>
                         <button class="btnSignal">Signaler</button>
                     </div>
                 </div>

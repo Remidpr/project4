@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head> 
-        <link rel="stylesheet" href="../../public/css/style.css"/>
+        <link rel="stylesheet" href="public/css/style.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,7 +17,7 @@
             <div class="container_accueil">
                 <h1 class="main_title">Billet simple pour l'Alaska.</h1>
                 <button class="main_button">Commencer à lire</button>
-                <img src="../../public/images/alaska.jpg" alt="Montagne Alaska" class="image_accueil"/>
+                <img src="public/images/alaska.jpg" alt="Montagne Alaska" class="image_accueil"/>
                 <div class="banner">
                     <div class="banner_part1">
                         <a href="" class="select_page">Accueil</a>
@@ -39,7 +39,7 @@
                     <article>
                         <h3 class="title_article"><?php echo $post['titre']; ?></h3>
                         <p class="date"><?php echo $post['date_article']; ?></p>
-                        <img src="../../public/images/<?php echo $post['img']; ?>" alt="image article" class="image_article">
+                        <img src="/public/images/<?php echo $post['img']; ?>" alt="image article" class="image_article">
                         <p class="description_article"><?php echo $post['description_article']; ?></p>
                         <a href="index.php?action=article&id=<?php echo $post['id']; ?>" class="read_more">Lire la suite
                             <i class="fas fa-arrow-right"></i>

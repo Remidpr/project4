@@ -20,10 +20,19 @@ function getAdminUser($idAdmin)
 ?>
 
 <?php
+function getFirstComments()
+{
+    $db = dbConnect();
+    $firstComment = $db->query('SELECT * FROM commentaires ORDER BY date_commentaire DESC LIMIT 0, 5');
+    return $firstComment;
+}
+?>
+
+<?php
 function getAllComments()
 {
     $db = dbConnect();
-    $comments = $db->query('SELECT * FROM commentaires');
-    return $comments;
+    $allComment = $db->query('SELECT * FROM commentaires');
+    return $allComment;
 }
 ?>

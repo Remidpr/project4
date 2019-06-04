@@ -9,7 +9,7 @@
     </head>
     <body>
         <header id="header">
-            <h2 class="mainTitleEdit">Gestion des commentaires</h2>
+            <h2 class="mainTitleEdit">Gestion des articles</h2>
         </header>
         <div class="bodyComment">
             <ul class="collapsible menuComment popout">
@@ -20,41 +20,27 @@
                 <li>
                     <div class="collapsible-header"><i class="material-icons authorComment">message</i><span class="authorComment">Tous les commentaires</span></div>
                     <div class="collapsible-body">
-                        <?php
-                            while ($allCommentaire = $allComments->fetch())
-                            {
-                        ?>
                             <ul class="collection listComment">
                                 <li class="collection-item avatar">
-                                    <i class="material-icons circle">face</i>
-                                    <p><span class="title authorComment"><?php echo $allCommentaire['auteur']; ?></span> - <span class="dateComment"><?php echo $allCommentaire['date_commentaire']; ?></span></p>
-                                    <p class="message"><?php echo $allCommentaire['commentaire']; ?></p>
-                                    <a href="#!" class="secondary-content"><i class="material-icons more">more</i></a>
+                                <i class="material-icons circle">face</i>
+                                <p><span class="title authorComment">Test</span> - <span class="dateComment">test</span></p>
+                                <p class="message">test</p>
+                                <a href="#!" class="secondary-content"><i class="material-icons more">more</i></a>
                                 </li>
                             </ul>
-                        <?php
-                            }
-                        ?>
                     </div>
                 </li>
                 <li class="active">
                     <div class="collapsible-header select"><i class="material-icons authorComment">forum</i><span class="authorComment">Les derniers commentaires</span></div>
                     <div class="collapsible-body">
-                        <?php
-                            while ($commentaire = $firstComments->fetch())
-                            {
-                        ?>
-                            <ul class="collection listComment">
-                                <li class="collection-item avatar">
-                                    <i class="material-icons circle">face</i>
-                                    <p><span class="title authorComment"><?php echo $commentaire['auteur']; ?></span> - <span class="dateComment"><?php echo $commentaire['date_commentaire']; ?></span></p>
-                                    <p class="message"><?php echo $commentaire['commentaire']; ?></p>
-                                    <a href="#!" class="secondary-content"><i class="material-icons more">more</i></a>
-                                </li>
-                            </ul>
-                        <?php
-                            }
-                        ?>
+                        <ul class="collection listComment">
+                            <li class="collection-item avatar">
+                                <i class="material-icons circle">face</i>
+                                <p><span class="title authorComment">Test</span> - <span class="dateComment">test</span></p>
+                                <p class="message">test</p>
+                                <a href="#!" class="secondary-content"><i class="material-icons more">more</i></a>
+                            </li>
+                        </ul>
                     </div>
                 </li>
             </ul>
