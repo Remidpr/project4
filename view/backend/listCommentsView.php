@@ -29,8 +29,12 @@
                                     <i class="material-icons circle">face</i>
                                     <p><span class="title authorComment"><?php echo $allCommentaire['auteur']; ?></span> - <span class="dateComment"><?php echo $allCommentaire['date_commentaire']; ?></span></p>
                                     <p class="message"><?php echo $allCommentaire['commentaire']; ?></p>
-                                    <a href="#!" class="secondary-content"><i class="material-icons more">more</i></a>
+                                    <a class='dropdown-trigger secondary-content' data-target='dropdown1' href="#!"><i class="material-icons more">more</i></a>
                                 </li>
+                            </ul>
+                            <ul id='dropdown1' class='dropdown-content'>
+                                <li><a href="#!">Modifier</a></li>
+                                <li><a href="#!">Supprimer</a></li>
                             </ul>
                         <?php
                             }
@@ -49,8 +53,12 @@
                                     <i class="material-icons circle">face</i>
                                     <p><span class="title authorComment"><?php echo $commentaire['auteur']; ?></span> - <span class="dateComment"><?php echo $commentaire['date_commentaire']; ?></span></p>
                                     <p class="message"><?php echo $commentaire['commentaire']; ?></p>
-                                    <a href="#!" class="secondary-content"><i class="material-icons more">more</i></a>
+                                    <a class='dropdown-trigger secondary-content' data-target='dropdown1' href="#!"><i class="material-icons more">more</i></a>
                                 </li>
+                            </ul>
+                            <ul id='dropdown1' class='dropdown-content'>
+                                <li><a href="#!">Modifier</a></li>
+                                <li><a href="#!">Supprimer</a></li>
                             </ul>
                         <?php
                             }

@@ -25,8 +25,12 @@
                                 <i class="material-icons circle"><img src="/public/images/<?php echo $adminPost['img']; ?>" alt="image article" class="miniatureImg"></i>
                                 <p><span class="title authorComment"><?php echo $adminPost['titre']; ?></span> - <span class="dateComment"><?php echo $adminPost['date_article']; ?></span></p>
                                 <p class="message"><?php echo $adminPost['description_article']; ?></p>
-                                <a href="#!" class="secondary-content"><i class="material-icons more">more</i></a>
+                                <a class='dropdown-trigger secondary-content' data-target='dropdown1' href="#!"><i class="material-icons more">more</i></a>
                                 </li>
+                            </ul>
+                            <ul id='dropdown1' class='dropdown-content'>
+                                <li><a href="#!">Modifier</a></li>
+                                <li><a href="#!">Supprimer</a></li>
                             </ul>
                         <?php
                             }
