@@ -47,3 +47,31 @@ function getAdminPosts()
     return $allPosts;
 }
 ?>
+
+<?php
+function signalComment()
+{
+    $db = dbConnect();
+    $signalComment = $db->prepare('UPDATE commentaires SET signalement = "1" WHERE id=?');
+    $signalComment->execute(array($_GET['id']));
+    return $signalComment;
+}
+?>
+
+<?php
+function getSignalComments()
+{
+    $db = dbConnect();
+    $signalComments = $db->query('SELECT * FROM commentaires WHERE signalement = "1"');
+    return $signalComments;
+}
+?>
+
+<?php
+function getSignalNumber()
+{
+    $db = dbConnect();
+    $signalNumber = $db->query('SELECT COUNT(signalement) FROM commentaires WHERE signalement > "0"');
+    return $signalNumber->fetchColumn();
+}
+?>

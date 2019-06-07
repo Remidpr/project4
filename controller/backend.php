@@ -42,6 +42,8 @@ function allComments()
 {
     $firstComments = getFirstComments();
     $allComments = getAllComments();
+    $commentsSignal = getSignalComments();
+    $numberSignal= getSignalNumber();
     require('./view/backend/listCommentsView.php');
 }
 
@@ -49,4 +51,9 @@ function adminPosts()
 {
     $adminPosts = getAdminPosts();
     require('./view/backend/listPostsAdmin.php');
+}
+
+function commentSignal()
+{
+    $commentSignal = signalComment();
 }

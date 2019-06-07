@@ -42,7 +42,7 @@
                         <p class="message"><?php echo $comments[$i]['commentaire']; ?></p> 
                     </div>
                     <div class="buttonComment">
-                        <button class="btnSignal">Signaler</button>
+                        <a href="index.php?action=signal&id=<?php echo $comments[$i]['id']; ?>"><button class="btnSignal">Signaler</button></a>
                     </div>
                 </div>
                 <div class="separator2"></div>
@@ -51,8 +51,7 @@
             ?>
             </div>
         </div>
-        <?php
-        //$comments->closeCursor(); // Termine le traitement de la requête 
+        <?php 
         ?>
     </body>
 </html>

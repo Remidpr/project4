@@ -14,8 +14,27 @@
         <div class="bodyComment">
             <ul class="collapsible menuComment popout">
                 <li>
-                    <div class="collapsible-header"><i class="material-icons authorComment">announcement</i><span class="authorComment">Commentaires signalés</span><span class="new badge" data-badge-caption="en attente">4</span></div>
-                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    <div class="collapsible-header"><i class="material-icons authorComment">announcement</i><span class="authorComment">Commentaires signalés</span><span class="new badge" data-badge-caption="en attente"><?php echo $numberSignal; ?></span></div>
+                    <div class="collapsible-body">
+                        <?php
+                            while ($commentaireSignal = $commentsSignal->fetch())
+                            {
+                        ?>
+                            <ul class="collection listComment">
+                                <li class="collection-item avatar">
+                                     <i class="material-icons circle">face</i>
+                                    <p><span class="title authorComment"><?php echo $commentaireSignal['auteur']; ?></span> - <span class="dateComment"><?php echo $commentaireSignal['date_commentaire']; ?></span></p>
+                                    <p class="message"><?php echo $commentaireSignal['commentaire']; ?></p>
+                                    <a class='dropdown-trigger secondary-content' data-target='dropdown1' href="#!"><i class="material-icons more">more</i></a>
+                                </li>
+                            </ul>
+                            <ul id='dropdown1' class='dropdown-content'>
+                                <li><a href="#!">Supprimer</a></li>
+                            </ul>
+                        <?php
+                            }
+                        ?>
+                    </div>
                 </li>
                 <li>
                     <div class="collapsible-header"><i class="material-icons authorComment">message</i><span class="authorComment">Tous les commentaires</span></div>
@@ -33,7 +52,6 @@
                                 </li>
                             </ul>
                             <ul id='dropdown1' class='dropdown-content'>
-                                <li><a href="#!">Modifier</a></li>
                                 <li><a href="#!">Supprimer</a></li>
                             </ul>
                         <?php
@@ -57,7 +75,6 @@
                                 </li>
                             </ul>
                             <ul id='dropdown1' class='dropdown-content'>
-                                <li><a href="#!">Modifier</a></li>
                                 <li><a href="#!">Supprimer</a></li>
                             </ul>
                         <?php

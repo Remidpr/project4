@@ -16,6 +16,10 @@ if (isset($_GET['action'])) {
             echo 'Aucun identifiant de billet envoyé';
         }
     }
+    elseif ($_GET['action'] == 'signal'){
+        commentSignal();
+        article();
+    }
     // ajout commentaire
     elseif ($_GET['action'] == 'addComment') { 
         echo "addComment";
