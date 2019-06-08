@@ -11,14 +11,13 @@ if (isset($_GET['action'])) {
     if ($_GET['action'] == 'article') {
         if (isset($_GET['id']) && $_GET['id'] > 0) {
             article();
+            if (isset($_GET['idCommentSignal']) && $_GET['idCommentSignal'] > 0) {
+                commentSignal();
+            }
         }
         else {
             echo 'Aucun identifiant de billet envoyé';
         }
-    }
-    elseif ($_GET['action'] == 'signal'){
-        commentSignal();
-        article();
     }
     // ajout commentaire
     elseif ($_GET['action'] == 'addComment') { 

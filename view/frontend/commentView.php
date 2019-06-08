@@ -42,7 +42,7 @@
                         <p class="message"><?php echo $comments[$i]['commentaire']; ?></p> 
                     </div>
                     <div class="buttonComment">
-                        <a href="index.php?action=signal&id=<?php echo $comments[$i]['id']; ?>"><button class="btnSignal">Signaler</button></a>
+                        <a href="index.php?action=article&id=<?php echo $comments[$i]['id_billet']; ?>&idCommentSignal=<?php echo $comments[$i]['id']; ?>"><button class="btnSignal">Signaler</button></a>
                     </div>
                 </div>
                 <div class="separator2"></div>

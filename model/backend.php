@@ -53,7 +53,7 @@ function signalComment()
 {
     $db = dbConnect();
     $signalComment = $db->prepare('UPDATE commentaires SET signalement = "1" WHERE id=?');
-    $signalComment->execute(array($_GET['id']));
+    $signalComment->execute(array($_GET['idCommentSignal']));
     return $signalComment;
 }
 ?>
