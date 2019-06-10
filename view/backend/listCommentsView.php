@@ -25,11 +25,8 @@
                                      <i class="material-icons circle">face</i>
                                     <p><span class="title authorComment"><?php echo $commentaireSignal['auteur']; ?></span> - <span class="dateComment"><?php echo $commentaireSignal['date_commentaire']; ?></span></p>
                                     <p class="message"><?php echo $commentaireSignal['commentaire']; ?></p>
-                                    <a class='dropdown-trigger secondary-content' data-target='dropdown1' href="#!"><i class="material-icons more">more</i></a>
+                                    <a class='secondary-content' href="index.php?action=removeComment&id=<?php echo $commentaireSignal['id'];?>"><i class="material-icons more">delete</i></a>
                                 </li>
-                            </ul>
-                            <ul id='dropdown1' class='dropdown-content'>
-                                <li><a href="#!">Supprimer</a></li>
                             </ul>
                         <?php
                             }
@@ -48,11 +45,8 @@
                                     <i class="material-icons circle">face</i>
                                     <p><span class="title authorComment"><?php echo $allCommentaire['auteur']; ?></span> - <span class="dateComment"><?php echo $allCommentaire['date_commentaire']; ?></span></p>
                                     <p class="message"><?php echo $allCommentaire['commentaire']; ?></p>
-                                    <a class='dropdown-trigger secondary-content' data-target='dropdown1' href="#!"><i class="material-icons more">more</i></a>
+                                    <a class='secondary-content' href="index.php?action=removeComment&id=<?php echo $allCommentaire['id'];?>"><i class="material-icons more">delete</i></a>
                                 </li>
-                            </ul>
-                            <ul id='dropdown1' class='dropdown-content'>
-                                <li><a href="#!">Supprimer</a></li>
                             </ul>
                         <?php
                             }
@@ -71,11 +65,8 @@
                                     <i class="material-icons circle">face</i>
                                     <p><span class="title authorComment"><?php echo $commentaire['auteur']; ?></span> - <span class="dateComment"><?php echo $commentaire['date_commentaire']; ?></span></p>
                                     <p class="message"><?php echo $commentaire['commentaire']; ?></p>
-                                    <a class='dropdown-trigger secondary-content' data-target='dropdown1' href="#!"><i class="material-icons more">more</i></a>
+                                    <a class='secondary-content' href="index.php?action=removeComment&id=<?php echo $commentaire['id'];?>"><i class="material-icons more">delete</i></a>
                                 </li>
-                            </ul>
-                            <ul id='dropdown1' class='dropdown-content'>
-                                <li><a href="#!">Supprimer</a></li>
                             </ul>
                         <?php
                             }

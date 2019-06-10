@@ -54,6 +54,9 @@ if (isset($_GET['action'])) {
     elseif ($_GET['action'] == 'listComment') {
         allComments();   
     }
+    elseif ($_GET['action'] == 'removeComment') {
+        commentRemove();   
+    }
     elseif ($_GET['action'] == 'adminPosts') {
         adminPosts();
     }

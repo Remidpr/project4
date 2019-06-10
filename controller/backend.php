@@ -57,3 +57,9 @@ function commentSignal()
 {
     $commentSignal = signalComment();
 }
+
+function commentRemove()
+{
+    $commentRemove = removeComment();
+    header('Location: /index.php?action=listComment');
+}

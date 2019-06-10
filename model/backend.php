@@ -75,3 +75,13 @@ function getSignalNumber()
     return $signalNumber->fetchColumn();
 }
 ?>
+
+<?php
+function removeComment()
+{
+    $db = dbConnect();
+    $removeComment = $db->prepare('DELETE FROM commentaires WHERE id=?');
+    $removeComment->execute(array($_GET['id']));
+    return $removeComment;
+}
+?>
