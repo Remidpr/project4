@@ -85,3 +85,13 @@ function removeComment()
     return $removeComment;
 }
 ?>
+
+<?php
+function removePost()
+{
+    $db = dbConnect();
+    $removePost = $db->prepare('DELETE FROM articles WHERE id=?');
+    $removePost->execute(array($_GET['id']));
+    return $removePost;
+}
+?>

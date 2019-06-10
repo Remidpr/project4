@@ -63,3 +63,9 @@ function commentRemove()
     $commentRemove = removeComment();
     header('Location: /index.php?action=listComment');
 }
+
+function postRemove()
+{
+    $commentRemove = removePost();
+    header('Location: /index.php?action=adminPosts');
+}

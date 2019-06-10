@@ -57,6 +57,9 @@ if (isset($_GET['action'])) {
     elseif ($_GET['action'] == 'removeComment') {
         commentRemove();   
     }
+    elseif ($_GET['action'] == 'removePost') {
+        postRemove();   
+    }
     elseif ($_GET['action'] == 'adminPosts') {
         adminPosts();
     }

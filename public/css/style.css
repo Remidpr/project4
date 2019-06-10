@@ -630,3 +630,7 @@ li.collection-item.avatar{
     font-size: 14px;
     color: #629bad;
 }
+
+.first-content{
+    right: -14px !important;
+}
