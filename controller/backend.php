@@ -69,3 +69,8 @@ function postRemove()
     $commentRemove = removePost();
     header('Location: /index.php?action=adminPosts');
 }
+
+function customPost()
+{
+    require('./view/backend/customPost.php');
+}

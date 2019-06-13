@@ -25,7 +25,7 @@
                                 <i class="material-icons circle"><img src="/public/images/<?php echo $adminPost['img']; ?>" alt="image article" class="miniatureImg"></i>
                                 <p><span class="title authorComment"><?php echo $adminPost['titre']; ?></span> - <span class="dateComment"><?php echo $adminPost['date_article']; ?></span></p>
                                 <p class="message"><?php echo $adminPost['description_article']; ?></p>
-                                <a class='secondary-content' href=""><i class="material-icons more">edit</i></a>
+                                <a class='secondary-content' href="index.php?action=customPost&id=<?php echo $adminPost['id'];?>"><i class="material-icons more">edit</i></a>
                                 <a class='first-content secondary-content' href="index.php?action=removePost&id=<?php echo $adminPost['id'];?>"><i class="material-icons more">delete</i></a>
                                 </li>
                             </ul>

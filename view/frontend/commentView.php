@@ -37,9 +37,9 @@
                 ?>
                 <div class="comment">
                     <div class="infoComment">
-                        <p><span class="authorComment"><?php echo $comments[$i]['auteur']; ?>
+                        <p><span class="authorComment"><?php echo htmlspecialchars($comments[$i]['auteur']); ?>
                         </span> - <span class="dateComment"><?php echo $comments[$i]['date_commentaire']; ?></span></p>
-                        <p class="message"><?php echo $comments[$i]['commentaire']; ?></p> 
+                        <p class="message"><?php echo htmlspecialchars($comments[$i]['commentaire']); ?></p> 
                     </div>
                     <div class="buttonComment">
                         <a href="index.php?action=article&id=<?php echo $comments[$i]['id_billet']; ?>&idCommentSignal=<?php echo $comments[$i]['id']; ?>"><button class="btnSignal">Signaler</button></a>

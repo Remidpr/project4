@@ -63,6 +63,9 @@ if (isset($_GET['action'])) {
     elseif ($_GET['action'] == 'adminPosts') {
         adminPosts();
     }
+    elseif ($_GET['action'] == 'customPost') {
+        customPost();
+    }
     // ajout article
     elseif ($_GET['action'] == 'addPost') { 
         if (!empty($_POST['postTitle']) && !empty($_POST['postImg']) && !empty($_POST['postDescription']) && !empty($_POST['postContent'])) {
