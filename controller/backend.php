@@ -72,5 +72,6 @@ function postRemove()
 
 function customPost()
 {
+    $post = getUpdatePost();
     require('./view/backend/customPost.php');
 }

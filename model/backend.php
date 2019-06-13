@@ -48,6 +48,7 @@ function getAdminPosts()
 }
 ?>
 
+
 <?php
 function signalComment()
 {
@@ -93,5 +94,15 @@ function removePost()
     $removePost = $db->prepare('DELETE FROM articles WHERE id=?');
     $removePost->execute(array($_GET['id']));
     return $removePost;
+}
+
+
+function getUpdatePost()
+{
+    $db = dbConnect();
+    $reponse = $db->prepare('SELECT * FROM articles WHERE id=?');
+    $reponse->execute(array($_GET['id']));
+
+    return $reponse->fetch(); 
 }
 ?>

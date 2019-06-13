@@ -16,16 +16,16 @@
         <div class="containerEdit">
             <form action="index.php?action=addPost" class="formEdit" method="post">
                 <div>
-                    <textarea id="titlePost" name="postTitle" required><?php echo $adminPost['titre']; ?></textarea>
+                    <textarea id="titlePost" name="postTitle" required><?php echo $post['titre']; ?></textarea>
                 </div>
                 <div class="formImgPost">
                     <input type="file" name="postImg" id="imgPost" required/>
                 </div>
                 <div>
-                    <textarea class="descriptionPost" name="postDescription"></textarea>
+                    <textarea class="descriptionPost" name="postDescription"><?php echo $post['description_article']; ?></textarea>
                 </div>
                 <div>
-                    <textarea id="mytextarea" name="postContent"></textarea>
+                    <textarea id="mytextarea" name="postContent"><?php echo $post['contenu']; ?></textarea>
                 </div>
                 <div>
                     <button type="submit" class="submitEdit waves-effect waves-light btn" >Modifier article
