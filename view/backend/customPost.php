@@ -14,12 +14,12 @@
             <h2 class="mainTitleEdit">Modification article</h2>
         </header>
         <div class="containerEdit">
-            <form action="index.php?action=addPost" class="formEdit" method="post">
+            <form action="index.php?action=postModif&id=<?php echo $post['id'];?>" class="formEdit" method="post">
                 <div>
                     <textarea id="titlePost" name="postTitle" required><?php echo $post['titre']; ?></textarea>
                 </div>
                 <div class="formImgPost">
-                    <input type="file" name="postImg" id="imgPost" required/>
+                    <textarea name="postImg" id="imgPost" required><?php echo $post['img']; ?></textarea>
                 </div>
                 <div>
                     <textarea class="descriptionPost" name="postDescription"><?php echo $post['description_article']; ?></textarea>

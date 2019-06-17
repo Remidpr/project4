@@ -75,3 +75,9 @@ function customPost()
     $post = getUpdatePost();
     require('./view/backend/customPost.php');
 }
+
+function postModif()
+{
+    $postModif = modifPost();
+    header('Location: /index.php?action=adminPosts');
+}

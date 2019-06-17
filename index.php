@@ -66,6 +66,14 @@ if (isset($_GET['action'])) {
     elseif ($_GET['action'] == 'customPost') {
         customPost();
     }
+    elseif ($_GET['action'] == 'postModif') {
+        if (!empty($_POST['postTitle']) && !empty($_POST['postContent']) && !empty($_POST['postDescription']) && !empty($_POST['postImg'])) {
+            postModif();
+        }
+        else {
+            echo 'Erreur : tous les champs ne sont pas remplis !';
+        }
+    }
     // ajout article
     elseif ($_GET['action'] == 'addPost') { 
         if (!empty($_POST['postTitle']) && !empty($_POST['postImg']) && !empty($_POST['postDescription']) && !empty($_POST['postContent'])) {

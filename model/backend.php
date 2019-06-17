@@ -106,3 +106,13 @@ function getUpdatePost()
     return $reponse->fetch(); 
 }
 ?>
+
+<?php
+function modifPost()
+{
+    $db = dbConnect();
+    $modifPost = $db->prepare('UPDATE articles SET titre = ?, contenu = ?, description_article = ?, img = ? WHERE id = ?');
+    $modifPost->execute(array($_POST['postTitle'], $_POST['postContent'], $_POST['postDescription'], $_POST['postImg'], $_GET['id']));
+    return $modifPost;
+}
+?>

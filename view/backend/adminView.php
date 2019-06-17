@@ -10,6 +10,9 @@
         <header id="header">
             <h2 class="mainTitleEdit">Espace d'administration</h2>
         </header>
+        <div class="btnNav btnWebSite">
+            <a href="index.php" target="blank" class="btnAdmin">Site internet</a>
+        </div>
         <div class="containerAdmin">
                 <ul class="collection with-header">
                     <li class="collection-header"><h4 class="menuAdmin">Menu administration</h4></li>
