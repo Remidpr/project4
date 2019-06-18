@@ -15,7 +15,7 @@
                     <li><a href="" class="menu_item">FAQ</a></li>
                     <li><a href="" class="menu_item">Contact</a></li>
                     <div class="btnNav">
-                        <a href="index.php?action=admin" class="btnAdmin">Connectez-vous</a>
+                        <a href="index.php?action=admin" target="blank" class="btnAdmin">Connectez-vous</a>
                     </div>
                 </ul>
             </nav>

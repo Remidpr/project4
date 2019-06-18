@@ -1,5 +1,5 @@
 <?php
-require('./model/backend.php');
+require('./model/BackendManager.php');
 
 function loginAdmin()
 {
@@ -18,7 +18,8 @@ function editPost()
 
 function addPost($title, $image, $description, $content)
 {
-    $editPost = newPost($title, $image, $description, $content);
+    $addPost = new BackendManager();
+    $editPost = $addPost -> newPost($title, $image, $description, $content);
 
     if ($editPost === false) {
         die("Impossible d'ajouter l'article!");
@@ -29,7 +30,8 @@ function addPost($title, $image, $description, $content)
 }
 
 function isAdminUser ($login, $mdp){
-    $adminUser = getAdminUser(1);
+    $adminLogin = new BackendManager();
+    $adminUser = $adminLogin -> getAdminUser(1);
     $isPasswordCorrect = password_verify($mdp, $adminUser['motdepasse']);
     if($isPasswordCorrect == true && $login==$adminUser['identifiant']){
         return true; 
@@ -40,44 +42,58 @@ function isAdminUser ($login, $mdp){
 
 function allComments()
 {
-    $firstComments = getFirstComments();
-    $allComments = getAllComments();
-    $commentsSignal = getSignalComments();
-    $numberSignal= getSignalNumber();
+    $getFirstComments = new BackendManager();
+    $firstComments = $getFirstComments -> getFirstComments();
+
+    $getAllComments = new BackendManager();
+    $allComments = $getAllComments -> getAllComments();
+
+    $getSignalComments = new BackendManager();
+    $commentsSignal = $getSignalComments -> getSignalComments();
+
+    $getNumberSignal = new BackendManager();
+    $numberSignal = $getNumberSignal -> getSignalNumber();
+
     require('./view/backend/listCommentsView.php');
 }
 
 function adminPosts()
 {
-    $adminPosts = getAdminPosts();
+    $getAdminPosts = new BackendManager();
+    $adminPosts = $getAdminPosts -> getAdminPosts();
     require('./view/backend/listPostsAdmin.php');
 }
 
 function commentSignal()
 {
-    $commentSignal = signalComment();
+    $functionSignal = new BackendManager();
+    $commentSignal = $functionSignal -> signalComment();
 }
 
 function commentRemove()
 {
-    $commentRemove = removeComment();
+    $functionRemoveComment = new BackendManager();
+    $commentRemove = $functionRemoveComment -> removeComment();
     header('Location: /index.php?action=listComment');
 }
 
 function postRemove()
 {
-    $commentRemove = removePost();
+    $functionRemovePost = new BackendManager();
+    $postRemove = $functionRemovePost -> removePost();
     header('Location: /index.php?action=adminPosts');
 }
 
 function customPost()
 {
-    $post = getUpdatePost();
+    $functionCustomPost = new BackendManager();
+    $post = $functionCustomPost -> getUpdatePost();
     require('./view/backend/customPost.php');
 }
 
 function postModif()
 {
-    $postModif = modifPost();
+    $functionModifPost = new BackendManager();
+    $postModif = $functionModifPost -> modifPost();
     header('Location: /index.php?action=adminPosts');
 }
