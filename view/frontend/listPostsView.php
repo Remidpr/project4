@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head> 
-        <link rel="stylesheet" href="public/css/style.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -57,10 +56,10 @@
                 <i class="large material-icons">more</i>
             </a>
             <ul>
-                <li><a class="btn-floating iconContact"><i class="material-icons">mail</i></a></li>
-                <li><a class="btn-floating iconContact"><i class="material-icons">phone</i></a></li>
-                <li><a class="btn-floating iconContact"><i class="material-icons">map</i></a></li>
-                <li><a class="btn-floating iconContact"><i class="material-icons">search</i></a></li>
+                <li><a class="btn-floating iconContact pulse"><i class="material-icons">mail</i></a></li>
+                <li><a class="btn-floating iconContact pulse"><i class="material-icons">phone</i></a></li>
+                <li><a class="btn-floating iconContact pulse"><i class="material-icons">map</i></a></li>
+                <li><a class="btn-floating iconContact pulse"><i class="material-icons">search</i></a></li>
             </ul>
         </div>
         <?php include("footerView.php"); ?>

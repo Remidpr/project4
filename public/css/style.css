@@ -5,7 +5,6 @@ body {
 #menu {
     display: flex;
     justify-content: space-evenly;
-    padding-right: 40px;
     align-items: center;
 }
 
@@ -325,6 +324,7 @@ h4{
     padding: 12px;
     border-radius: 5px;
     border: 1px solid rgba(48, 48, 48, 0.2);
+    height: auto !important;
 }
 
 .labelComment {
@@ -643,4 +643,73 @@ li.collection-item.avatar{
     margin-top: 30px;
     margin-right: 70px;
 }
+
+.menugrp{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 68%;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1050px){
+    .main_title{
+        display: none;
+    }
+    .main_button{
+        display: none;
+    }
+    .container_articles {
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+    #bodyArticle {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .image_article1 {
+        margin-top: 100px;
+    }
+    .commentPart2 {
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .inputComment{
+        width: 100%;
+    }
+    .partName {
+        width: 100%;
+    }  
+    .partMail {
+        width: 100%;
+    }    
+    #mail{
+        box-sizing: border-box;
+    } 
+    .comments {
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 500px){
+    .btnNav{
+        margin: 15px;
+        display: none;
+    }
+    .comments {
+        margin-left: 0px;
+    }
+    .comment {
+        padding: 0px;
+    }
+    .partComment {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .buttonComment {
+        padding-left: 30px;
+    }
+}
+
 
